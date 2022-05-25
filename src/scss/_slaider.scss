@@ -1,0 +1,109 @@
+.slider {
+    position: relative;
+    margin-top: 230px;
+    &__learn {
+        // width: 1110px;
+        // overflow: hidden;
+    }
+    &__wrapper {
+        // display: flex;
+        // width: 300%;
+        // gap: 70px;
+        &-left {
+            position: absolute;
+            left: 90px;
+            position: absolute;
+            top: 40%;
+            background-image: url('../icons/Al1.svg') ;
+            background-position: 50%;
+            transform: translateY(-50%);
+            background-repeat: no-repeat;
+            width: 40px;
+            height: 60px;   
+            border-radius: 10px 0;
+            border: 1px solid $whitecolor;
+            opacity: 0.5;
+            color: $whitecolor;
+        }
+        &-right {
+            position: absolute;
+            right: 90px;
+            position: absolute;
+            top: 40%;
+            background-image: url('../icons/Ar1.svg') ;
+            background-position: 50%;
+            transform: translateY(-50%);
+            background-repeat: no-repeat;
+            width: 40px;
+            height: 60px;   
+            border-radius: 10px 0;
+            border: 1px solid $whitecolor;
+            opacity: 0.5;
+            color: $whitecolor;
+        }
+        &-content {
+            width: 1110px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 29px;
+            &-item {
+                width: 350px;
+                height: 473px;
+                background-color: $darkgrey;
+                border-radius: 30px 0px;
+                img {
+                    display: flex;
+                }
+                &-span {
+                    margin-top: 30px;
+                    padding-left: 35px;
+                    font-weight: 700;
+                    font-size: 18px;
+                    line-height: 27px;
+                    opacity: 0.5;
+                    color: $whitecolor;
+                }
+                &-info {
+                    margin-top: 20px;
+                    padding-left: 35px;
+                    font-weight: 500;
+                    font-size: 18px;
+                    line-height: 27px;
+                    color: $whitecolor;
+                }
+                &-wrap {
+                    margin-top: 48px;
+                    display: flex;
+                    justify-content: space-between;
+                    &-data {
+                        padding-left: 45px;
+                        font-weight: 700;
+                        font-size: 16px;
+                        line-height: 24px;
+                        text-transform: uppercase;
+                        color: $whitecolor;
+                        opacity: 0.5;
+                    }
+                    &-link {
+                        font-weight: 700;
+                        font-size: 16px;
+                        line-height: 24px;
+                        text-transform: uppercase;
+                        a {
+                            padding: 18px 62px 18px 52px;
+                            border-radius: 30px 0;
+                            text-decoration: none;
+                            color: $whitecolor;
+                            background-color: $purplecolor;
+                            &:hover {
+                                transition: all 0.3s ease;
+                                background-color: #453879;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

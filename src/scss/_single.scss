@@ -1,0 +1,33 @@
+.single {
+    margin-top: 322px;
+    &__title {
+        font-weight: 700;
+        font-size: 48px;
+        color: $whitecolor;
+    }
+    &__subtitle {
+        margin-top: 10px;
+        font-weight: 700;
+        font-size: 100px;
+        line-height: 150px;
+        color: transparent;
+        -webkit-text-stroke: 1px $whitecolor;
+    }
+    &__pleer {
+        margin-top: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        &-line {
+            width: 887px;
+            height: 1px;
+            background-color: $whitecolor;
+        }
+        &-time {
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 27px;
+            color: $whitecolor;
+        }
+    }
+}

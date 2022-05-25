@@ -1,0 +1,21 @@
+.cards {
+    top: 150px;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    &__block {
+        position: relative;
+        &-text { 
+            position: absolute;
+            width: 100%;
+            left: 0;
+            bottom: 6px;
+            color: $whitecolor;
+            padding: 20px 20px 27px 20px;
+            background: rgba($purplecolor,  0.7);
+            // opacity: 0.8;
+            border-radius: 20px 0 20px 0;
+        }
+    }
+}

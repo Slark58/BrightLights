@@ -1,0 +1,141 @@
+.tracks {
+    
+    margin-top: 85px;
+    padding-top: 180px;
+    &__flex {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__block {
+        &-head {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+            &-title {
+                font-weight: 700;
+                font-size: 48px;
+                line-height: 72px;
+                color: $whitecolor;
+            }
+        }
+        &-pleer {
+            margin-top: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            &-start {
+                height: 25px;
+            }
+            &-line {
+                width: 250px;
+                height: 1px;
+                background-color: $whitecolor;
+            }
+            &-time {
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 27px;
+                color: $whitecolor;
+            }
+        }
+        &-list {
+            flex-wrap: wrap;
+            padding-left: 30px;
+            align-items: center;
+            counter-reset: num;
+            margin-top: 50px;
+            list-style-type: none;
+            &-link {
+                position: relative;
+                margin-bottom: 20px;
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 27px;
+                color: $whitecolor;
+                &::before {
+                    content: counter(num) ''; 
+                    counter-increment: num;
+                    display: inline-block;	
+                    position: absolute;
+                    top: 3px;
+                    left: -20px;  
+                    font-weight: 700;
+                    font-size: 14px;
+                    line-height: 21px;
+                    color: $whitecolor;
+                    opacity: 0.6;
+                }
+            }
+        }
+        &-follow {
+            padding-top: 30px;
+            display: flex;
+            align-items: center;
+            gap: 40px;
+            &-span {
+                font-weight: 600;
+                font-size: 24px;
+                line-height: 36px;
+                color: $whitecolor;
+            }
+            &-links {
+                display: flex;
+                align-items: center;
+                img {
+                    margin-right: 10px;
+                }
+                &-spotify {
+                    align-items: center;
+                    font-weight: 600;
+                    font-size: 14px;
+                    line-height: 21px;
+                    margin-right: 30px;
+                    a {
+                        display: flex;
+                        align-items: center;
+                        gap: 10px;
+                        text-decoration: none;
+                        color: $whitecolor;
+                        path {
+                            fill: $whitecolor;
+                        }
+                        &:hover {
+                            color: #1EC838;
+                            transition: .3s ease;
+                            path {
+                                fill: #1EC838;
+                                transition: .3s  ease;
+                            }
+                        }
+                    }
+                }
+                &-iTunes {
+                    align-items: center;
+                    font-weight: 600;
+                    font-size: 14px;
+                    line-height: 21px;
+                    margin-right: 30px;
+                    a {
+                        display: flex;
+                        align-items: center;
+                        gap: 10px;
+                        text-decoration: none;
+                        color: $whitecolor;
+                        path {
+                            fill: $whitecolor;
+                        }
+                        &:hover {
+                            color: #868686;
+                            transition:  0.3s ease;
+                            path {
+                                fill: #868686;
+                                transition: .3s  ease;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
