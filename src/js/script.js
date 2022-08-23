@@ -58,3 +58,41 @@ prev.addEventListener('click', () => {
 
 
 });
+
+
+
+class cards {
+    constructor(src, span, info, data, link, parent) {
+        this.src = src;
+        this.span = span;
+        this.info = info;
+        this.data = data;
+        this.link = link;
+        this.content = document.querySelector(parent);
+
+    }
+
+    render() {
+        const element = document.createElement('div');
+
+        element.classList.add('slider__wrapper-content-item');
+
+        element.innerHTML = `
+            <img src=${this.src} alt="foto">
+            <div class="slider__wrapper-content-item-span">${this.span}</div>
+            <div class="slider__wrapper-content-item-info">${this.info}</div>
+            <div class="slider__wrapper-content-item-wrap m1">
+                <div class="slider__wrapper-content-item-wrap-data">${this.data}</div>
+                <div class="slider__wrapper-content-item-wrap-link"><a href="#">${this.link}</a></div>
+            </div>
+        `
+
+        this.content.append(element);
+    }
+}
+
+const card1 = new cards("src/img/slieri.png", "Chandler, AZ", "The Park at Wild Horse Pass", "Apr 02 2021", "tickets", ".slider__wrapper-content").render();
+
+
+
+
