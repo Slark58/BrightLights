@@ -88,11 +88,29 @@ class cards {
         `
 
         this.content.append(element);
+
     }
 }
 
-const card1 = new cards("src/img/slieri.png", "Chandler, AZ", "The Park at Wild Horse Pass", "Apr 02 2021", "tickets", ".slider__wrapper-content").render();
 
 
+// const card1 = new cards("src/img/slieri.png", "Chandler, AZ", "The Park at Wild Horse Pass", "Apr 02 2021", "tickets", ).render();
 
+
+const getResource = async (url) => {
+    const res = await fetch(url);
+
+    if(!res.ok) {
+        throw new Error(`Some Problems`);
+    }
+
+    return await res.json();
+};
+
+getResource('http://localhost:3000/slide')
+    .then(data => {
+        data.forEach(({img, span, info, data, link}) => {
+            new cards(img, span, info, data, link, ".slider__wrapper-content").render()
+        })
+    })
 
