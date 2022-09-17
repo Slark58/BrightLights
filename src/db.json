@@ -1,0 +1,25 @@
+{
+    "slide": [
+        {
+            "img": "src/img/slieri.png",
+            "span": "Chandler, AZ",
+            "info": "The Park at Wild Horse Pass",
+            "data": "Apr 02 2021",
+            "link": "tickets"
+        },
+        {
+            "img": "src/img/slierb.png",
+            "span": "Ibiza, IBZ",
+            "info": "Swag Ibiza Club",
+            "data": "Jul 08 2021",
+            "link": "tickets"
+        },
+        {
+            "img": "src/img/slierz.png",
+            "span": "Ibiza, IBZ",
+            "info": "El Swing Ibiza",
+            "data": "Jul 10 2021",
+            "link": "tickets"
+        }
+    ]
+}
