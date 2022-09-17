@@ -107,7 +107,7 @@ const getResource = async (url) => {
     return await res.json();
 };
 
-getResource('https://slark58.github.io/BrightLights/slide')
+getResource('https://slark58.github.io/BrightLights')
     .then(data => {
         data.forEach(({img, span, info, data, link}) => {
             new cards(img, span, info, data, link, ".slider__wrapper-content").render()
